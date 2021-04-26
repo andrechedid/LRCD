@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lrcdepartment.LoginPageController">
+   <children>
+      <Pane layoutX="-10.0" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #E22121;">
+         <children>
+            <Text fill="WHITE" layoutX="95.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Everywhere " wrappingWidth="210.251953125">
+               <font>
+                  <Font name="Viner Hand ITC" size="34.0" />
+               </font>
+            </Text>
+            <Text fill="#232223" layoutX="91.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="for">
+               <font>
+                  <Font name="Viner Hand ITC" size="45.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="172.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Everyone">
+               <font>
+                  <Font name="Viner Hand ITC" size="34.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ImageView fitHeight="126.0" fitWidth="155.0" layoutX="519.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/LoginPageImg.jpeg" />
+         </image>
+      </ImageView>
+      <Text fill="#232223" layoutX="520.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" AnchorPane.bottomAnchor="294.474609375" AnchorPane.leftAnchor="520.0" AnchorPane.rightAnchor="156.3525390625" AnchorPane.topAnchor="175.0419921875">
+         <font>
+            <Font name="Palatino Linotype" size="30.0" />
+         </font>
+      </Text>
+      <TextField fx:id="VolunteerChiefID" layoutX="507.0" layoutY="237.0" promptText="Volunteer/Chief ID" />
+      <TextField fx:id="DepartmentID" layoutX="507.0" layoutY="287.0" promptText="Department ID " />
+      <PasswordField fx:id="Password" layoutX="507.0" layoutY="340.0" promptText="Password" />
+      <Button fx:id="LButton" layoutX="514.0" layoutY="407.0" mnemonicParsing="false" onAction="#login" prefHeight="38.0" prefWidth="138.0" style="-fx-background-color: #232223;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

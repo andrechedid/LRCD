@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lrcdepartment.IConditionController">
+   <children>
+      <Pane prefHeight="75.0" prefWidth="800.0" style="-fx-background-color: #E22121;">
+         <children>
+            <Label fx:id="catName" alignment="CENTER" layoutX="313.0" layoutY="25.0" prefHeight="28.0" prefWidth="174.0" text="Category Name" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="63.0" layoutX="223.0" layoutY="10.0">
+               <image>
+                  <Image url="@../icons/invImg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="63.0" layoutX="512.0" layoutY="10.0">
+               <image>
+                  <Image url="@../icons/invImg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="100.0" layoutY="195.0" mnemonicParsing="false" onAction="#nItems" prefHeight="80.0" prefWidth="600.0" style="-fx-border-radius: 70; -fx-background-radius: 70; -fx-background-color: #38423C;" text="New " textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="100.0" layoutY="299.0" mnemonicParsing="false" onAction="#uItems" prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #38423C; -fx-background-radius: 100; -fx-border-radius: 100;" text="Used" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="100.0" layoutY="420.0" mnemonicParsing="false" onAction="#back" prefHeight="20.0" prefWidth="600.0" style="-fx-background-color: #728499;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="120.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

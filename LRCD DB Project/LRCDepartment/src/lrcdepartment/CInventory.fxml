@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #A0A3A4;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lrcdepartment.CInventoryController">
+   <children>
+      <Text layoutX="277.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equipement Categories ">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font></Text>
+      <ScrollPane layoutY="100.0" pannable="true" prefHeight="400.0" prefWidth="800.0">
+         <content>
+          <AnchorPane maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: WHITE;">
+               <children>
+                  <Button fx:id="C1" layoutX="150.0" layoutY="30.0" mnemonicParsing="false" onAction="#qODetails" prefHeight="40.0" prefWidth="500.0" style="-fx-background-color: #38423C; -fx-background-radius: 70; -fx-border-radius: 70;" text="Needles" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+                  <Button fx:id="C5" layoutX="150.0" layoutY="230.0" mnemonicParsing="false" onAction="#qFiDetails" prefHeight="40.0" prefWidth="500.0" style="-fx-background-color: #38423C; -fx-background-radius: 70; -fx-border-radius: 70;" text="Bandage" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+                  <Button fx:id="C4" layoutX="150.0" layoutY="180.0" mnemonicParsing="false" onAction="#qFDetails" prefHeight="40.0" prefWidth="500.0" style="-fx-background-color: #38423C; -fx-background-radius: 70; -fx-border-radius: 70;" text="Breathing Circuit " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+                  <Button fx:id="C6" layoutX="150.0" layoutY="280.0" mnemonicParsing="false" onAction="#qSDetails" prefHeight="40.0" prefWidth="500.0" style="-fx-background-color: #38423C; -fx-background-radius: 70; -fx-border-radius: 70;" text="Oximeter " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+                  <Button fx:id="C7" layoutX="150.0" layoutY="330.0" mnemonicParsing="false" onAction="#qSeDetails" prefHeight="40.0" prefWidth="500.0" style="-fx-background-color: #38423C; -fx-background-radius: 70; -fx-border-radius: 70;" text="Mask" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+                  <Button fx:id="C2" layoutX="150.0" layoutY="80.0" mnemonicParsing="false" onAction="#qTDetails" prefHeight="40.0" prefWidth="500.0" style="-fx-background-color: #38423C; -fx-background-radius: 70; -fx-border-radius: 70;" text="Defibrillator" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+                  <Button fx:id="C3" layoutX="150.0" layoutY="130.0" mnemonicParsing="false" onAction="#qThDetails" prefHeight="40.0" prefWidth="500.0" style="-fx-background-color: #38423C; -fx-background-radius: 70; -fx-border-radius: 70;" text="Nerve Stimulator " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Button>
+                  <Label fx:id="q1" layoutX="56.0" layoutY="35.0" text="QuantityOne">
+                     <font>
+                        <Font name="Bell MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="q2" layoutX="55.0" layoutY="85.0" text="QuantityTwo">
+                     <font>
+                        <Font name="Bell MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="q3" layoutX="54.0" layoutY="135.0" text="QuantityThree">
+                     <font>
+                        <Font name="Bell MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="q4" layoutX="54.0" layoutY="185.0" text="QuantityFour">
+                     <font>
+                        <Font name="Bell MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="q5" layoutX="55.0" layoutY="235.0" text="QuantityFive">
+                     <font>
+                        <Font name="Bell MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="q6" layoutX="55.0" layoutY="285.0" text="QuantitySix">
+                     <font>
+                        <Font name="Bell MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="q7" layoutX="55.0" layoutY="335.0" text="QuantitySeven">
+                     <font>
+                        <Font name="Bell MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="662.0" layoutY="300.0" mnemonicParsing="false" onAction="#remove" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: red; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: BLACK;" text="-">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="662.0" layoutY="230.0" mnemonicParsing="false" onAction="#add" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #5EDC1F; -fx-border-radius: 50; -fx-background-radius: 50; -fx-border-color: BLACK;" text="+">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Button layoutX="367.0" layoutY="61.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #728499; -fx-background-radius: 70; -fx-border-radius: 70; -fx-border-color: WHITE;" text="Back" textFill="WHITE" />
+      <MenuButton fx:id="mainButton" layoutX="666.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-radius: 50; -fx-border-radius: 50;" text="Category">
+        <items>
+          <MenuItem fx:id="catO" mnemonicParsing="false" onAction="#catOC" text="Action 1" />
+          <MenuItem fx:id="catT" mnemonicParsing="false" onAction="#catTC" text="Action 2" />
+          <MenuItem fx:id="catTh" mnemonicParsing="false" onAction="#catThC" text="Action 3" />
+          <MenuItem fx:id="catF" mnemonicParsing="false" onAction="#catFC" text="Action 4" />
+          <MenuItem fx:id="catFi" mnemonicParsing="false" onAction="#catFiC" text="Action 5" />
+          <MenuItem fx:id="catS" mnemonicParsing="false" onAction="#catSC" text="Action 6" />
+          <MenuItem fx:id="catSe" mnemonicParsing="false" onAction="#catSeC" text="Action 7" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="equIDToR" layoutX="666.0" layoutY="62.0" prefHeight="25.0" prefWidth="67.0" promptText="EquID" style="-fx-background-radius: 50; -fx-border-radius: 50;" />
+   </children>
+</AnchorPane>
